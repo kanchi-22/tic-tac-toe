@@ -46,26 +46,26 @@ function checkWin(){
                 // console.log(line.className);
                 return "Player 2";
             }
-            else{
-                return "0";
-            }
+//             else{
+//                 return "0";
+//             }
         }
     }
     for(let i = 0 ; i <= 2 ; i = i + 1){
         if((boxes[i].innerText == boxes[i+3].innerText) && (boxes[i].innerText == boxes[i+6].innerText) && (boxes[i+3].innerText == boxes[i+6].innerText)){
             if(boxes[i].innerText == 'O'){
                 line.className = `line${i+4}`;
-                console.log(line.className);
+//                 console.log(line.className);
                 return "Player 1";
             }
             else if(boxes[i].innerText == 'X'){
                 line.className = `line${i+4}`;
-                console.log(line.className);
+//                 console.log(line.className);
                 return "Player 2";
             }
-            else{
-                return "0";
-            }
+//             else{
+//                 return "0";
+//             }
         }
     }
     if((boxes[2].innerText == boxes[4].innerText) && (boxes[4].innerText == boxes[6].innerText) && (boxes[2].innerText == boxes[6].innerText)){
@@ -77,9 +77,9 @@ function checkWin(){
             line.className = "line8";
             return "Player 2";
         }
-        else{
-            return "0";
-        }
+//         else{
+//             return "0";
+//         }
     }
     else if((boxes[0].innerText == boxes[4].innerText) && (boxes[4].innerText == boxes[8].innerText) && (boxes[0].innerText == boxes[8].innerText)){
         if(boxes[0].innerText == 'O'){
@@ -90,9 +90,9 @@ function checkWin(){
             line.className = "line7";
             return "Player 2";
         }
-        else{
-            return "0";
-        }
+//         else{
+//             return "0";
+//         }
     }
     else if((boxes[0].innerText != "") && (boxes[1].innerText != "") && (boxes[2].innerText != "") && (boxes[3].innerText != "") && (boxes[4].innerText != "") && (boxes[5].innerText != "") && (boxes[6].innerText != "") && (boxes[7].innerText != "") && (boxes[8].innerText != "")){
         return "no";
@@ -100,6 +100,7 @@ function checkWin(){
     else{
         return "0";
     }
+    return "0";
 }
 
 playGame();
