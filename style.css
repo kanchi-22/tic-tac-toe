@@ -1,0 +1,116 @@
+body{
+    padding:0px;
+    margin:0px;
+    background-color: black;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#game{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width:360px;
+    height:360px;
+    margin-bottom: 50px;
+}
+.box{
+    width:120px;
+    height:120px;
+    border: white 2px solid;
+    background: rgb(233, 185, 185);
+    cursor: pointer;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.box:active{
+    opacity: 0.7;
+}
+#ngbutton:active{
+    opacity: 0.7;
+}
+#ngbutton{
+    cursor: pointer;
+    height:50px;
+    width:270px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(184, 87, 87);
+    border-radius:4px;
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+p{
+    font-size: 20px;
+}
+.line1{
+    position: relative;
+    width:280px;
+    height:2px;
+    background-color: white;
+    top:60px;
+}
+.line2{
+    position: relative;
+    width:280px;
+    height:2px;
+    background-color: white;
+    top:190px;
+}
+.line3{
+    position: relative;
+    width:280px;
+    height:2px;
+    background-color: white;
+    top:310px;
+}
+.line4{
+    position: relative;
+    width:280px;
+    height:2px;
+    background-color: white;
+    right: 120px;
+    top:180px;
+    transform: rotate(90deg);
+}
+.line5{
+    position: relative;
+    width:280px;
+    height:2px;
+    background-color: white;
+    left: 5px;
+    top:180px;
+    transform: rotate(90deg);
+}
+.line6{
+    position: relative;
+    width:280px;
+    height:2px;
+    background-color: white;
+    left: 0px;
+    top:180px;
+    transform: rotate(90deg);
+}
+.line7{
+    position: relative;
+    width:400px;
+    height:2px;
+    background-color: white;
+    top:180px;
+    transform: rotate(45deg);
+}
+.line8{
+    position: relative;
+    width:400px;
+    height:2px;
+    background-color: white;
+    top:195px;
+    transform: rotate(135deg);
+}
